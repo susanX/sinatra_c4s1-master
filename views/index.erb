@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Triathlon Relay Entries</title>
+  <link rel='stylesheet' href='/dist/css/bootstrap.css'>
+</head>
+<body>
+  <div class='container'>
+  <h1>Entries for Relay Triathlon</h1>
+
+  <form method='POST' role='form'>
+    <h3>Event</h3>
+    <div class="radio">
+      <label>
+        <input type="radio" name="event" id="optionsRadios1" value="men_march" checked>
+        Men's triathon relay 15/3/2014.
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="event" id="optionsRadios2" value="ladies_march">
+        Ladies' triathlon relay 15/3/2014.
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="event" id="optionsRadios1" value="men_april">
+        Men's triathon relay 15/4/2014.
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="event" id="optionsRadios2" value="ladies_april">
+        Ladies' triathlon relay 15/4/2014.
+      </label>
+    </div>
+
+
+    <h3>Swimmer details</h3>
+    <div class='form-group'>
+      <label for='swimmer[name]'>Name</label>
+      <input name='swimmer[name]' class='form-control'>
+    </div>
+    <div class='form-group'>
+      <label for='swimmer[dob]'>Date of Birth</label>
+      <input name='swimmer[dob]' placeholder='dd/mm/yyyy' class='form-control'>
+    </div>
+
+    <h3>Cyclist details</h3>
+    <div class='form-group'>
+      <label for='cyclist[name]'>Name</label>
+      <input name='cyclist[name]' class='form-control'>
+    </div>
+    <div class='form-group'>
+      <label for='cyclist[dob]'>Date of Birth</label>
+      <input name='cyclist[dob]' placeholder='dd/mm/yyyy' class='form-control'>
+    </div>
+
+    <h3>Runner details</h3>
+    <div class='form-group'>
+      <label for='runner[name]'>Name</label>
+      <input name='runner[name]' class='form-control'>
+    </div>
+    <div class='form-group'>
+      <label for='runner[dob]'>Date of Birth</label>
+      <input name='runner[dob]' placeholder='dd/mm/yyyy' class='form-control'>
+    </div>
+
+    <button type="submit" class="btn btn-success btn-lg">Submit</button>
+  </form>
+  </div>
+</body>
+</html>

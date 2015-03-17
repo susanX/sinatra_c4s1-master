@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Triathlon Relay Entries</title>
+  <link rel='stylesheet' href='/dist/css/bootstrap.css'>
+</head>
+<body>
+  <div class='container'>
+  <h1>Competitor Tickets</h1>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Swimmer Ticket</div>
+    <div class="panel-body">
+      <p class='lead'>This is your ticket for the <%= @event_name %> on <%= @event_date %>. Please keep it with you at all times. You will need it to gain entry to the competition.</p>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>D.O.B</th>
+      </tr>
+      <tr>
+        <td><%= @swimmer_first_name %></td>
+        <td><%= @swimmer_last_name %></td>
+        <td><%= @swimmer_dob %></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Cyclist Ticket</div>
+    <div class="panel-body">
+      <p class='lead'>This is your ticket for the <%= @event_name %> on <%= @event_date %>. Please keep it with you at all times. You will need it to gain entry to the competition.</p>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>D.O.B</th>
+      </tr>
+      <tr>
+        <td><%= @cyclist_first_name %></td>
+        <td><%= @cyclist_last_name %></td>
+        <td><%= @cyclist_dob %></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Runner Ticket</div>
+    <div class="panel-body">
+      <p class='lead'>This is your ticket for the <%= @event_name %> on <%= @event_date %>. Please keep it with you at all times. You will need it to gain entry to the competition.</p>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>D.O.B</th>
+      </tr>
+      <tr>
+        <td><%= @runner_first_name %></td>
+        <td><%= @runner_last_name %></td>
+        <td><%= @runner_dob %></td>
+      </tr>
+    </table>
+  </div>
+
+
+
+  </div>
+</body>
+</html>
